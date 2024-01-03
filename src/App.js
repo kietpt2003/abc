@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import NavigationBar from './components/NavigationBar';
+import { FooterABC } from './components/Footer';
+import Header from './components/Header';
+// import FooterABC from './components/Footer'
 
 function App() {
+  let stringHello = 'bthao and thuy lieu';
+  let checkabc = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar />
+      {/* <h1 className='abc'>hello</h1> */}
+      {/* <Header sayHello={stringHello} isValid={checkabc} />
+      <FooterABC /> */}
     </div>
   );
 }
